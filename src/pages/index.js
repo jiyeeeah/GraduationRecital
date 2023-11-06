@@ -10,7 +10,7 @@ export default function Home() {
       </div>
       <img src="images/IMG_2961.jpg" alt="지예사진" />
       <img src="images/IMG_2962.jpg" alt="가현사진" />
-      <div className="bg-white flex flex-col justify-center">
+      <div className="flex flex-col justify-center bg-white">
         <MenuButton bgColor="bg-red-400">Deep Dive</MenuButton>
         <MenuButton bgColor="bg-blue-400">모순</MenuButton>
         <MenuButton bgColor="bg-yellow-400">스펙트럼</MenuButton>
