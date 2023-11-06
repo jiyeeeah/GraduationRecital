@@ -1,5 +1,6 @@
-// function App() {
-//   return <div className="text-red-400">안녕하세요</div>;
-// }
+import React from "react";
+import Home from "./pages/";
 
-// export default App;
+export default function App() {
+  return <Home />;
+}
