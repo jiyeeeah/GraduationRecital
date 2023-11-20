@@ -18,3 +18,9 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "GodoMaumR";
+  src: url("../assets/fonts/godoMaum.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

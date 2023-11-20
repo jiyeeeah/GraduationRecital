@@ -13,6 +13,7 @@ import ChangDukURl from "../assets/images/ChangDuk.png";
 import KingLearUrl from "../assets/images/KingLear.png";
 import JiyeProfileUrl from "../assets/images/JiyeProfile.png";
 import GahyunProfileUrl from "../assets/images/GahyunProfile.png";
+import MenuButton from "../components/MenuButton";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -23,8 +24,8 @@ export default function Home() {
 
   return (
     <div className="h-screen overflow-scroll snap snap-y snap-mandatory">
-      <div className="flex flex-col items-center justify-between flex-shrink-0 w-full h-screen snap-start">
-        <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3 " />
+      <div className="flex flex-col items-center justify-between flex-shrink-0 w-full h-screen py-12 snap-start">
+        <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
         <img src={GahyunAndJiyeUrl} alt="가현과 지예" className="p-3" />
         <div className="flex flex-row items-center justify-center text-xs text-white font-UhBeeSeHyunBold">
@@ -33,29 +34,22 @@ export default function Home() {
         </div>
         <DownIcon className="w-8 h-8 m-5 fill-white" />
       </div>
-      <div className="flex flex-col justify-between flex-shrink-0 w-full h-screen px-3 py-10 snap-start">
-        <div className="flex flex-col">
+      <div className="flex flex-col justify-between flex-shrink-0 w-full h-screen px-3 py-16 snap-start">
+        <div className="relative flex flex-col">
           <img src={ProgramUrl} alt="Program" className="px-3 w-36" />
+          <p className="absolute text-xl leading-none text-center text-red-300 right-6 bottom-10 font-GodoMaumR">
+            곡 제목을 클릭해서
+            <br />
+            자세한 곡해설과 함께 감상하세요!
+          </p>
           <div className="w-full h-[0.5px] bg-white my-5" />
         </div>
-        <button onClick={goToDeepDive}>
-          <img src={DeepDiveUrl} alt="Deep Dive" className="p-3" />
-        </button>
-        <button onClick={goToDeepDive}>
-          <img src={IronyUrl} alt="모순" className="p-3" />
-        </button>
-        <button onClick={goToDeepDive}>
-          <img src={SpectrumUrl} alt="스펙트럼" className="p-3" />
-        </button>
-        <button onClick={goToDeepDive}>
-          <img src={VanishUrl} alt="소멸" className="p-3" />
-        </button>
-        <button onClick={goToDeepDive}>
-          <img src={ChangDukURl} alt="창덕궁의 지금" className="p-3" />
-        </button>
-        <button onClick={goToDeepDive}>
-          <img src={KingLearUrl} alt="리어왕의 절규" className="p-3" />
-        </button>
+        <MenuButton url={DeepDiveUrl} alt="Deep Dive" onClick={goToDeepDive} />
+        <MenuButton url={IronyUrl} alt="모순" onClick={goToDeepDive} />
+        <MenuButton url={SpectrumUrl} alt="스펙트럼" onClick={goToDeepDive} />
+        <MenuButton url={VanishUrl} alt="소멸" onClick={goToDeepDive} />
+        <MenuButton url={ChangDukURl} alt="창덕궁의 지금" onClick={goToDeepDive} />
+        <MenuButton url={KingLearUrl} alt="리어왕의 절규" onClick={goToDeepDive} />
         <div className="flex flex-col">
           <div className="w-full h-[0.5px] bg-white my-5" />
           <div className="flex flex-row items-center justify-between px-3">

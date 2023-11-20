@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         UhBeeSeHyunBold: ["UhBeeSeHyunBold"],
         SCoreDream4: ["SCoreDream4"],
+        GodoMaumR: ["GodoMaumR"],
       },
     },
   },
