@@ -4,9 +4,7 @@ import setScreenHeight from "../utils/setScreenHeight";
 import MenuButton from "../components/MenuButton";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
-import GraduationRecitalUrl from "../assets/images/GraduationRecital.png";
 import mainImageUrl from "../assets/images/mainImage.png";
-import GahyunAndJiyeUrl from "../assets/images/GahyunAndJiye.png";
 import ProgramUrl from "../assets/images/Program.png";
 import DeepDiveUrl from "../assets/images/DeepDive.png";
 import IronyUrl from "../assets/images/Irony.png";
@@ -38,13 +36,7 @@ export default function Home() {
   return (
     <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
       <div className="relative flex flex-col items-center justify-center flex-shrink-0 w-full h-real-screen snap-start">
-        <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3 " />
-        <img src={mainImageUrl} alt="메인사진" className="" />
-        <img src={GahyunAndJiyeUrl} alt="가현과 지예" className="absolute p-3 bottom-10 " />
-        <div className="flex flex-row items-center justify-between w-full text-white text-[10px] font-UhBeeSeHyunBold absolute bottom-8">
-          <p className="ml-5">일시 : 11월 30일 오후 8시 30분</p>
-          <p className="mr-5">장소 : 서울대학교 49동 예술관 콘서트홀</p>
-        </div>
+        <img src={mainImageUrl} alt="메인사진" />
         <DownIcon className="absolute bottom-0 w-8 h-8 m-5 fill-white" />
       </div>
       <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-5 h-real-screen snap-start">
