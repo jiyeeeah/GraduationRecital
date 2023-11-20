@@ -1,4 +1,7 @@
 import React from "react";
+import { useEffect } from "react";
+import setScreenHeight from "src/utils/setScreenHeight";
+import MenuButton from "../components/MenuButton";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
 import GraduationRecitalUrl from "../assets/images/GraduationRecital.png";
@@ -16,7 +19,6 @@ import GahyunProfileUrl from "../assets/images/GahyunProfile.png";
 import SparkLUrl from "../assets/images/sparkL.png";
 import HeartL from "../assets/images/heartL.png";
 import HeartR from "../assets/images/heartR.png";
-import MenuButton from "../components/MenuButton";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -24,6 +26,14 @@ export default function Home() {
   const goToDeepDive = () => {
     navigate("/deepDive");
   };
+
+  useEffect(() => {
+    setScreenHeight();
+
+    // resize 이벤트가 발생하면 다시 계산하도록 아래 코드 추가
+    window.addEventListener("resize", setScreenHeight);
+    return () => window.removeEventListener("resize", setScreenHeight);
+  }, []);
 
   return (
     <div className="max-h-screen overflow-scroll snap snap-y snap-mandatory">

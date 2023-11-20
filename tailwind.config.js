@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      height: {
+        "real-screen": "calc(var(--vh) * 100)",
+      },
       fontSize: {
         "2xs": ["8px", "12px"],
       },
@@ -11,6 +14,9 @@ module.exports = {
         SCoreDream4: ["SCoreDream4"],
         GodoMaumR: ["GodoMaumR"],
       },
+    },
+    minHeight: {
+      "real-screen": "calc(var(--vh) * 100)",
     },
   },
   plugins: [],
