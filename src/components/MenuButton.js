@@ -1,15 +1,14 @@
 import React from "react";
 import { ReactComponent as RightIcon } from "../assets/svgs/chevron-right.svg";
 
-export default function MenuButton({ url, alt, onClick, children }) {
+export default function MenuButton({ onClick, children }) {
   return (
     <button
       onClick={onClick}
-      className="relative flex flex-row items-center justify-between w-full"
+      className="relative flex flex-row items-center justify-between w-full gap-1"
     >
-      <img src={url} alt={alt} className="w-11/12 p-3" />
-      <RightIcon className="w-5 h-5 fill-white" />
-      {children}
+      <div className="relative flex flex-col w-full gap-3">{children}</div>
+      <RightIcon className="w-7 h-7 fill-white" />
     </button>
   );
 }

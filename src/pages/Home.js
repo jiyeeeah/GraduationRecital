@@ -51,23 +51,54 @@ export default function Home() {
           </div>
           <div className="w-full h-[0.5px] bg-white mt-3" />
         </div>
-        <MenuButton url={DeepDiveUrl} alt="Deep Dive" onClick={goToDeepDive}>
-          <img src={SparkLUrl} alt="spark" className="absolute top-0 w-4" />
+        <MenuButton onClick={goToDeepDive}>
+          <img src={DeepDiveUrl} alt="Deep Dive" className="self-start h-12 px-3" />
+          {/* <p className="text-2xs tracking-[0.2em] text-right text-white font-SCoreDream4">
+            가야금 | 강다연 &nbsp;&nbsp; 타악 | 장민
+          </p> */}
+          <img src={SparkLUrl} alt="spark" className="absolute w-4 -top-3" />
         </MenuButton>
-        <MenuButton url={IronyUrl} alt="모순" onClick={goToDeepDive} />
-        <MenuButton url={SpectrumUrl} alt="스펙트럼" onClick={goToDeepDive}>
+        <MenuButton onClick={goToDeepDive}>
+          <img src={IronyUrl} alt="모순" className="self-start h-12 px-3" />
+          {/* <p className="text-2xs tracking-[0.2em] text-right text-white font-SCoreDream4">
+            거문고 1 | 이루리 &nbsp;&nbsp; 거문고 2 | 박채원
+          </p> */}
+        </MenuButton>
+        <MenuButton onClick={goToDeepDive}>
+          <img src={SpectrumUrl} alt="스펙트럼" className="self-start h-12 px-3" />
+          {/* <p className="text-2xs tracking-[0.2em] text-right text-white font-SCoreDream4">
+            해금 | 이정빈 &nbsp;&nbsp; 가야금 | 권서현 &nbsp;&nbsp; 타악 | 김서정
+          </p> */}
           <img src={HeartR} alt="heart" className="absolute top-0 w-4 right-32" />
         </MenuButton>
-        <MenuButton url={VanishUrl} alt="소멸" onClick={goToDeepDive}>
+        <MenuButton onClick={goToDeepDive}>
+          <img src={VanishUrl} alt="소멸" className="self-start h-12 px-3" />
+          {/* <p className="text-2xs tracking-[0.2em] text-right text-white font-SCoreDream4">
+            가야금 | 김은유 &nbsp;&nbsp; 클라리넷 | 정민찬 &nbsp;&nbsp; 아쟁 | 이채은
+          </p> */}
           <img src={HeartL} alt="heart" className="absolute w-4 -top-3 -left-1" />
         </MenuButton>
-        <MenuButton url={ChangDukURl} alt="창덕궁의 지금" onClick={goToDeepDive} />
-        <MenuButton url={KingLearUrl} alt="리어왕의 절규" onClick={goToDeepDive} />
+        <MenuButton onClick={goToDeepDive}>
+          <img src={ChangDukURl} alt="창덕궁의 지금" className="self-start h-12 px-3" />
+          {/* <p className="text-2xs tracking-[0.2em] text-right text-white font-SCoreDream4">
+            대금 1 | 박현수 &nbsp;&nbsp; 대금 2 | 이선주 <br /> 거문고 1 | 원미 &nbsp;&nbsp; 거문고
+            2 | 주아현
+          </p> */}
+        </MenuButton>
+        <MenuButton url={KingLearUrl} alt="리어왕의 절규" onClick={goToDeepDive}>
+          <img src={KingLearUrl} alt="리어왕의 절규" className="self-start px-3 h-14" />
+          {/* <div className="flex flex-row gap-2 text-3xs tracking-[0.2em] text-right text-white font-SCoreDream4">
+            <p>소리 | 김소원</p>
+            <p>해금 | 이하영</p>
+            <p>거문고 1 | 원미</p>
+            <p>거문고 2 | 주아현</p>
+          </div> */}
+        </MenuButton>
         <div className="flex flex-col">
           <div className="w-full h-[0.5px] bg-white my-2" />
           <div className="flex flex-row items-center justify-between px-3">
-            <img src={JiyeProfileUrl} alt="지예 프로필" className="w-36" />
-            <img src={GahyunProfileUrl} alt="가현 프로필" className="w-36" />
+            <img src={JiyeProfileUrl} alt="지예 프로필" className="h-16" />
+            <img src={GahyunProfileUrl} alt="가현 프로필" className="h-16" />
           </div>
           <div className="w-full h-[0.5px] bg-white my-2" />
           <div className="flex flex-row justify-between text-white text-2xs font-SCoreDream4">

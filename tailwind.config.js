@@ -7,6 +7,7 @@ module.exports = {
         "real-screen": "calc(var(--vh) * 100)",
       },
       fontSize: {
+        "3xs": ["10px", "10px"],
         "2xs": ["8px", "12px"],
       },
       fontFamily: {
