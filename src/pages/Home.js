@@ -41,21 +41,23 @@ export default function Home() {
         <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
         <img src={GahyunAndJiyeUrl} alt="가현과 지예" className="p-3" />
-        <div className="flex flex-row items-center justify-between w-full text-white text-[11px] font-UhBeeSeHyunBold">
+        <div className="flex flex-row items-center justify-between w-full text-white text-[10px] font-UhBeeSeHyunBold">
           <p className="ml-5">일시 : 11월 30일 오후 8시 30분</p>
           <p className="mr-5">장소 : 서울대학교 49동 예술관 콘서트홀</p>
         </div>
-        <DownIcon className="absolute bottom-0 w-8 h-8 m-5 fill-white" />
+        <DownIcon className="w-8 h-8 m-5 fill-white" />
       </div>
       <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-5 h-real-screen snap-start">
         <div className="relative flex flex-col">
-          <img src={ProgramUrl} alt="Program" className="px-3 w-36" />
-          <p className="absolute text-xl leading-none text-center text-red-300 right-6 bottom-10 font-GodoMaumR">
-            곡 제목을 클릭해서
-            <br />
-            자세한 곡해설과 함께 감상하세요!
-          </p>
-          <div className="w-full h-[0.5px] bg-white my-5" />
+          <div className="flex flex-row items-center justify-between">
+            <img src={ProgramUrl} alt="Program" className="px-3 w-36" />
+            <p className="absolute text-xl leading-none text-center text-red-300 bottom-3 right-6 font-GodoMaumR">
+              곡 제목을 클릭해서
+              <br />
+              자세한 곡해설과 함께 감상하세요!
+            </p>
+          </div>
+          <div className="w-full h-[0.5px] bg-white mt-3" />
         </div>
         <MenuButton url={DeepDiveUrl} alt="Deep Dive" onClick={goToDeepDive}>
           <img src={SparkLUrl} alt="spark" className="absolute top-0 w-4" />
@@ -70,12 +72,12 @@ export default function Home() {
         <MenuButton url={ChangDukURl} alt="창덕궁의 지금" onClick={goToDeepDive} />
         <MenuButton url={KingLearUrl} alt="리어왕의 절규" onClick={goToDeepDive} />
         <div className="flex flex-col">
-          <div className="w-full h-[0.5px] bg-white my-5" />
+          <div className="w-full h-[0.5px] bg-white my-2" />
           <div className="flex flex-row items-center justify-between px-3">
             <img src={JiyeProfileUrl} alt="지예 프로필" className="w-36" />
             <img src={GahyunProfileUrl} alt="가현 프로필" className="w-36" />
           </div>
-          <div className="w-full h-[0.5px] bg-white my-5" />
+          <div className="w-full h-[0.5px] bg-white my-2" />
           <div className="flex flex-row justify-between text-white text-2xs font-SCoreDream4">
             <p>*이 발표는 학사 학위를 위한 필수 과정임</p>
             <p>지도교수 | 김승근 조훈</p>
