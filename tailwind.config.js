@@ -14,6 +14,11 @@ module.exports = {
         UhBeeSeHyunBold: ["UhBeeSeHyunBold"],
         SCoreDream4: ["SCoreDream4"],
         GodoMaumR: ["GodoMaumR"],
+        JustBreathe: ["JustBreathe"],
+        JejuGamgyul: ["JejuGamgyul"],
+      },
+      backgroundImage: {
+        sea: "url('../assets/images/background/sea.jpeg')",
       },
     },
     minHeight: {
