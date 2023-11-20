@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import setScreenHeight from "../utils/setScreenHeight";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
 import SeaBGURl from "../assets/images/background/sea.jpeg";
-import DeepSeaBGURl from "../assets/images/background/DeepSea1.jpg";
+import DeepSeaBGURl from "../assets/images/background/DeepSea.jpg";
 
 export default function DeepDive() {
   useEffect(() => {
