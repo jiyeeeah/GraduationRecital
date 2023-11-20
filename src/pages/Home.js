@@ -41,13 +41,13 @@ export default function Home() {
         <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
         <img src={GahyunAndJiyeUrl} alt="가현과 지예" className="p-3" />
-        <div className="flex flex-row items-center justify-between w-full text-white text-2xs font-UhBeeSeHyunBold">
+        <div className="flex flex-row items-center justify-between w-full text-white text-[11px] font-UhBeeSeHyunBold">
           <p className="ml-5">일시 : 11월 30일 오후 8시 30분</p>
           <p className="mr-5">장소 : 서울대학교 49동 예술관 콘서트홀</p>
         </div>
-        <DownIcon className="w-8 h-8 m-5 fill-white" />
+        <DownIcon className="absolute bottom-0 w-8 h-8 m-5 fill-white" />
       </div>
-      <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-16 h-real-screen snap-start">
+      <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-5 h-real-screen snap-start">
         <div className="relative flex flex-col">
           <img src={ProgramUrl} alt="Program" className="px-3 w-36" />
           <p className="absolute text-xl leading-none text-center text-red-300 right-6 bottom-10 font-GodoMaumR">
