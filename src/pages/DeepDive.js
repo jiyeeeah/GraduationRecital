@@ -32,29 +32,25 @@ export default function DeepDive() {
         <img src={DeepSeaBGURl} alt="바다 이미지" className="absolute top-0 w-full h-real-screen" />
         <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full">
           <p className="text-2xl text-center text-blue-50 font-JejuGamgyul">
-            나의 대학교 4년은 깊게 빠져들 무언가를 찾아가는 과정이었다.
+            나의 대학교 4년은 깊게 빠져들
+            <br />
+            무언가를 찾아가는 과정이었다.
             <br />
             끝내 찾은지는 아직 확실하지 않지만
             <br />
             절대 이 졸업이 마지막이 아닌, ‘시작’이라는 것은 알겠다.
             <br />
-            2015년 음악을 하겠다고 고등학교 자퇴를 감행한 나는
+            나는 음악에 빠졌었다.
             <br />
-            대학교까지 음악 전공을 하게 되었다.
+            나는 영상 편집에 빠졌었다.
             <br />
-            음악에 빠졌다.
+            그리고 2023년, 그저 재미로 시작한 웹개발 공부가
             <br />
-            2019년 영상이 재밌어서 방송동아리를 시작했다.
+            생각보다 더욱 즐거웠고
             <br />
-            영상 편집의 매력에 빠졌다.
+            웹개발에 빠졌다.
             <br />
-            그리고 2023년, 나는 졸업반이 되었고 졸업 이후의 삶을 위한 고민을 시작했다.
-            <br />
-            그저 재미로 시작한 웹개발 공부가 생각보다 더욱 즐거웠고
-            <br />
-            몰입했다.
-            <br />
-            나는 여러 분야에 빠져들 수 있었다.
+            나는 여러 분야에 몰입할 수 있었다.
             <br />
             지금 당신의 몰입은 어딜 향해 있습니까?
             <br />
