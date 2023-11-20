@@ -13,6 +13,9 @@ import ChangDukURl from "../assets/images/ChangDuk.png";
 import KingLearUrl from "../assets/images/KingLear.png";
 import JiyeProfileUrl from "../assets/images/JiyeProfile.png";
 import GahyunProfileUrl from "../assets/images/GahyunProfile.png";
+import SparkLUrl from "../assets/images/sparkL.png";
+import HeartL from "../assets/images/heartL.png";
+import HeartR from "../assets/images/heartR.png";
 import MenuButton from "../components/MenuButton";
 
 export default function Home() {
@@ -44,10 +47,16 @@ export default function Home() {
           </p>
           <div className="w-full h-[0.5px] bg-white my-5" />
         </div>
-        <MenuButton url={DeepDiveUrl} alt="Deep Dive" onClick={goToDeepDive} />
+        <MenuButton url={DeepDiveUrl} alt="Deep Dive" onClick={goToDeepDive}>
+          <img src={SparkLUrl} alt="spark" className="absolute top-0 w-4" />
+        </MenuButton>
         <MenuButton url={IronyUrl} alt="모순" onClick={goToDeepDive} />
-        <MenuButton url={SpectrumUrl} alt="스펙트럼" onClick={goToDeepDive} />
-        <MenuButton url={VanishUrl} alt="소멸" onClick={goToDeepDive} />
+        <MenuButton url={SpectrumUrl} alt="스펙트럼" onClick={goToDeepDive}>
+          <img src={HeartR} alt="heart" className="absolute top-0 w-4 right-32" />
+        </MenuButton>
+        <MenuButton url={VanishUrl} alt="소멸" onClick={goToDeepDive}>
+          <img src={HeartL} alt="heart" className="absolute w-4 -top-3 -left-1" />
+        </MenuButton>
         <MenuButton url={ChangDukURl} alt="창덕궁의 지금" onClick={goToDeepDive} />
         <MenuButton url={KingLearUrl} alt="리어왕의 절규" onClick={goToDeepDive} />
         <div className="flex flex-col">
