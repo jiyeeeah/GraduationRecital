@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import setScreenHeight from "src/utils/setScreenHeight";
+import setScreenHeight from "../utils/setScreenHeight";
 import MenuButton from "../components/MenuButton";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
