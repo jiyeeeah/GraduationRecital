@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
+    <div className="h-screen overflow-scroll snap snap-y snap-mandatory">
       <div className="flex flex-col items-center justify-between flex-shrink-0 w-full py-12 h-real-screen snap-start">
         <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
