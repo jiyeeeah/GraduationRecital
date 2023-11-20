@@ -26,14 +26,14 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen overflow-scroll snap snap-y snap-mandatory">
+    <div className="max-h-screen overflow-scroll snap snap-y snap-mandatory">
       <div className="flex flex-col items-center justify-between flex-shrink-0 w-full h-screen py-12 snap-start">
         <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
         <img src={GahyunAndJiyeUrl} alt="가현과 지예" className="p-3" />
-        <div className="flex flex-row items-center justify-center text-xs text-white font-UhBeeSeHyunBold">
-          <p className="mr-4">일시 : 11월 30일 오후 8시 30분</p>
-          <p>장소 : 서울대학교 49동 예술관 콘서트홀</p>
+        <div className="flex flex-row items-center justify-between w-full text-white text-2xs font-UhBeeSeHyunBold">
+          <p className="ml-5">일시 : 11월 30일 오후 8시 30분</p>
+          <p className="mr-5">장소 : 서울대학교 49동 예술관 콘서트홀</p>
         </div>
         <DownIcon className="w-8 h-8 m-5 fill-white" />
       </div>
