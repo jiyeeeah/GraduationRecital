@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import setScreenHeight from "src/utils/setScreenHeight";
 import MenuButton from "../components/MenuButton";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
@@ -25,9 +27,17 @@ export default function Home() {
     navigate("/deepDive");
   };
 
+  useEffect(() => {
+    setScreenHeight();
+
+    // resize 이벤트가 발생하면 다시 계산하도록 아래 코드 추가
+    window.addEventListener("resize", setScreenHeight);
+    return () => window.removeEventListener("resize", setScreenHeight);
+  }, []);
+
   return (
-    <div className="overflow-scroll h-screen-small snap snap-y snap-mandatory">
-      <div className="flex flex-col items-center justify-between flex-shrink-0 w-full py-12 h-screen-small snap-start">
+    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
+      <div className="flex flex-col items-center justify-between flex-shrink-0 w-full py-12 h-real-screen snap-start">
         <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
         <img src={GahyunAndJiyeUrl} alt="가현과 지예" className="p-3" />
@@ -37,7 +47,7 @@ export default function Home() {
         </div>
         <DownIcon className="w-8 h-8 m-5 fill-white" />
       </div>
-      <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-16 h-screen-small snap-start">
+      <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-16 h-real-screen snap-start">
         <div className="relative flex flex-col">
           <img src={ProgramUrl} alt="Program" className="px-3 w-36" />
           <p className="absolute text-xl leading-none text-center text-red-300 right-6 bottom-10 font-GodoMaumR">

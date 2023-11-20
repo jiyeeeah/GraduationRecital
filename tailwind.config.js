@@ -4,9 +4,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        screen: "100dvh",
-        "screen-small": "100svh",
-        "screen-large": "100lvh",
+        "real-screen": "calc(var(--vh) * 100)",
       },
       fontSize: {
         "2xs": ["8px", "12px"],
@@ -16,6 +14,9 @@ module.exports = {
         SCoreDream4: ["SCoreDream4"],
         GodoMaumR: ["GodoMaumR"],
       },
+    },
+    minHeight: {
+      "real-screen": "calc(var(--vh) * 100)",
     },
   },
   plugins: [],
