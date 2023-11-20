@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect } from "react";
-import setScreenHeight from "../utils/setScreenHeight";
 import MenuButton from "../components/MenuButton";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
@@ -27,16 +26,8 @@ export default function Home() {
     navigate("/deepDive");
   };
 
-  useEffect(() => {
-    setScreenHeight();
-
-    // resize 이벤트가 발생하면 다시 계산하도록 아래 코드 추가
-    window.addEventListener("resize", setScreenHeight);
-    return () => window.removeEventListener("resize", setScreenHeight);
-  }, []);
-
   return (
-    <div className="max-h-screen overflow-scroll snap snap-y snap-mandatory">
+    <div className="h-screen overflow-scroll snap snap-y snap-mandatory">
       <div className="flex flex-col items-center justify-between flex-shrink-0 w-full h-screen py-12 snap-start">
         <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
