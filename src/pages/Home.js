@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import MenuButton from "../components/MenuButton";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
@@ -28,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="h-screen overflow-scroll snap snap-y snap-mandatory">
-      <div className="flex flex-col items-center justify-between flex-shrink-0 w-full h-screen py-12 snap-start">
+      <div className="flex flex-col items-center justify-between flex-shrink-0 w-full py-12 h-screen-small snap-start">
         <img src={GraduationRecitalUrl} alt="Graduation Recital" className="p-3" />
         <img src={mainImageUrl} alt="메인사진" />
         <img src={GahyunAndJiyeUrl} alt="가현과 지예" className="p-3" />
@@ -38,7 +37,7 @@ export default function Home() {
         </div>
         <DownIcon className="w-8 h-8 m-5 fill-white" />
       </div>
-      <div className="flex flex-col justify-between flex-shrink-0 w-full h-screen px-3 py-16 snap-start">
+      <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-16 h-screen-small snap-start">
         <div className="relative flex flex-col">
           <img src={ProgramUrl} alt="Program" className="px-3 w-36" />
           <p className="absolute text-xl leading-none text-center text-red-300 right-6 bottom-10 font-GodoMaumR">
