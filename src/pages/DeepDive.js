@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import setScreenHeight from "../utils/setScreenHeight";
+import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
 import SeaBGURl from "../assets/images/background/sea.jpeg";
+import DeepSeaBGURl from "../assets/images/background/DeepSea1.jpg";
 
 export default function DeepDive() {
   useEffect(() => {
@@ -13,28 +15,56 @@ export default function DeepDive() {
   }, []);
 
   return (
-    <div className="h-real-screen bg-gradient-to-b from-blue-100 to-blue-900">
-      <img src={SeaBGURl} alt="바다 이미지" className="absolute top-0 h-real-screen" />
-      <div className="absolute top-0 flex flex-col items-center w-full">
-        <p className="m-10 text-7xl text-blue-950 font-JustBreathe">Deep Dive</p>
-        <p className="text-2xl text-center text-blue-950 font-JejuGamgyul">
-          무언가에 깊이 몰입한 적,
-          <br />
-          어딘가에 깊게 빠져든 적이 있나요?
-          <br />
-          지금 이 순간 만큼은
-          <br />
-          가야금의 선율에 빠져보시기를 바랍니다.
-          <br />
-          아름다운 듯 먹먹한 선율과
-          <br />
-          신나는 듯 어딘가 깜깜한 리듬이 매력적인
-          <br />이 곡은 앞으로 떠날 저의 여정에 대한
-          <br />
-          바람을 담은 곡입니다.
-          <br />
-          이제는 떠돌지 않고 꿋꿋하게 몰입하여 나아가려 합니다.
-        </p>
+    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
+      <div className="relative flex-shrink-0 h-real-screen snap-start bg-gradient-to-b from-blue-100 to-blue-900">
+        <img src={SeaBGURl} alt="바다 이미지" className="absolute top-0 h-real-screen" />
+        <div className="absolute top-0 flex flex-col items-center w-full h-full">
+          <p className="m-10 text-7xl text-blue-950 font-JustBreathe">Deep Dive</p>
+          <p className="text-2xl text-center text-blue-950 font-JejuGamgyul">
+            무언가에 깊이 몰입한 적,
+            <br />
+            어딘가에 깊게 빠져든 적이 있나요?
+          </p>
+          <DownIcon className="w-8 h-8 m-5 fill-blue-950" />
+        </div>
+      </div>
+      <div className="relative flex-shrink-0 snap-start h-real-screen">
+        <img src={DeepSeaBGURl} alt="바다 이미지" className="absolute top-0 w-full h-real-screen" />
+        <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full">
+          <p className="text-2xl text-center text-blue-50 font-JejuGamgyul">
+            나의 대학교 4년은 깊게 빠져들 무언가를 찾아가는 과정이었다.
+            <br />
+            끝내 찾은지는 아직 확실하지 않지만
+            <br />
+            절대 이 졸업이 마지막이 아닌, ‘시작’이라는 것은 알겠다.
+            <br />
+            2015년 음악을 하겠다고 고등학교 자퇴를 감행한 나는
+            <br />
+            대학교까지 음악 전공을 하게 되었다.
+            <br />
+            음악에 빠졌다.
+            <br />
+            2019년 영상이 재밌어서 방송동아리를 시작했다.
+            <br />
+            영상 편집의 매력에 빠졌다.
+            <br />
+            그리고 2023년, 나는 졸업반이 되었고 졸업 이후의 삶을 위한 고민을 시작했다.
+            <br />
+            그저 재미로 시작한 웹개발 공부가 생각보다 더욱 즐거웠고
+            <br />
+            몰입했다.
+            <br />
+            나는 여러 분야에 빠져들 수 있었다.
+            <br />
+            지금 당신의 몰입은 어딜 향해 있습니까?
+            <br />
+            지금 이 순간 만큼은 아름다운 듯 먹먹한 선율과
+            <br />
+            신나는 듯 어딘가 깜깜한 리듬이 매력적인 이 곡에
+            <br />
+            몰입해 보시길 바랍니다.
+          </p>
+        </div>
       </div>
     </div>
   );
