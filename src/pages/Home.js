@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import setScreenHeight from "../utils/setScreenHeight";
 import MenuButton from "../components/MenuButton";
-import { useNavigate } from "react-router-dom";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
 import mainImageUrl from "../assets/images/mainImage.png";
 import ProgramUrl from "../assets/images/Program.png";
@@ -19,12 +18,6 @@ import HeartL from "../assets/images/heartL.png";
 import HeartR from "../assets/images/heartR.png";
 
 export default function Home() {
-  const navigate = useNavigate();
-
-  const goToDeepDive = () => {
-    navigate("/deepDive");
-  };
-
   useEffect(() => {
     setScreenHeight();
 
@@ -34,14 +27,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
+    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory overscroll-none">
       <div className="relative flex flex-col items-center justify-center flex-shrink-0 w-full h-real-screen snap-start">
         <img src={mainImageUrl} alt="메인사진" />
         <DownIcon className="absolute bottom-0 w-8 h-8 m-5 fill-white" />
       </div>
       <div className="flex flex-col justify-between flex-shrink-0 w-full px-3 py-5 h-real-screen snap-start">
         <div className="relative flex flex-col">
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center justify-between outline-none">
             <img src={ProgramUrl} alt="Program" className="px-3 w-36" />
             <p className="absolute text-xl leading-none text-center text-red-300 bottom-3 right-6 font-GodoMaumR">
               곡 제목을 클릭해서
@@ -51,18 +44,18 @@ export default function Home() {
           </div>
           <div className="w-full h-[0.5px] bg-white mt-3" />
         </div>
-        <MenuButton src={DeepDiveUrl} alt="Deep Dive" onClick={goToDeepDive}>
+        <MenuButton src={DeepDiveUrl} alt="Deep Dive" link="/DeepDive">
           <img src={SparkLUrl} alt="spark" className="absolute w-4 -top-3" />
         </MenuButton>
-        <MenuButton src={IronyUrl} alt="모순" onClick={goToDeepDive} />
-        <MenuButton src={SpectrumUrl} alt="스펙트럼" onClick={goToDeepDive}>
+        <MenuButton src={IronyUrl} alt="모순" link="/Irony" />
+        <MenuButton src={SpectrumUrl} alt="스펙트럼" link="/Spectrum">
           <img src={HeartR} alt="heart" className="absolute w-4 -top-1 right-32" />
         </MenuButton>
-        <MenuButton src={VanishUrl} alt="소멸" onClick={goToDeepDive}>
+        <MenuButton src={VanishUrl} alt="소멸" link="/Vanish">
           <img src={HeartL} alt="heart" className="absolute w-4 -top-5 -left-1" />
         </MenuButton>
-        <MenuButton src={ChangDukURl} alt="창덕궁의 지금" onClick={goToDeepDive} />
-        <MenuButton src={KingLearUrl} alt="리어왕의 절규" onClick={goToDeepDive} />
+        <MenuButton src={ChangDukURl} alt="창덕궁의 지금" link="/ChangDuk" />
+        <MenuButton src={KingLearUrl} alt="리어왕의 절규" link="/KingLear" />
         <div className="flex flex-col">
           <div className="w-full h-[0.5px] bg-white my-2" />
           <div className="flex flex-row items-center justify-between px-3">

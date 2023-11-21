@@ -15,7 +15,7 @@ export default function DeepDive() {
   }, []);
 
   return (
-    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
+    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory overscroll-none">
       <div className="relative flex-shrink-0 h-real-screen snap-start bg-gradient-to-b from-blue-100 to-blue-900">
         <img src={SeaBGURl} alt="바다 이미지" className="absolute top-0 h-real-screen" />
         <div className="absolute top-0 flex flex-col items-center w-full h-full">
@@ -28,7 +28,7 @@ export default function DeepDive() {
           <DownIcon className="w-8 h-8 m-5 fill-blue-950" />
         </div>
       </div>
-      <div className="relative flex-shrink-0 snap-start h-real-screen">
+      <div className="relative flex-shrink-0 bg-blue-950 snap-start h-real-screen">
         <img src={DeepSeaBGURl} alt="바다 이미지" className="absolute top-0 w-full h-real-screen" />
         <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full">
           <p className="text-2xl text-center text-blue-50 font-JejuGamgyul">
