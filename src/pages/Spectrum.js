@@ -46,7 +46,7 @@ export default function Spectrum() {
       />
       <div
         style={BGElemetStyle}
-        className="absolute top-0 flex flex-col items-center w-full p-10 font-ICEJaram bg-gradient-to-b from-[#8B97A3] to-[#4B5F74] bg-clip-text text-transparent"
+        className="absolute top-0 flex flex-col items-center w-full font-ICEJaram bg-gradient-to-b from-[#8B97A3] to-[#4B5F74] bg-clip-text text-transparent"
       >
         <p className="text-5xl">스펙트럼</p>
         <p className="self-end text-right">작곡 이지예</p>
