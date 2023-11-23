@@ -46,17 +46,20 @@ export default function Spectrum() {
       />
       <div
         style={BGElemetStyle}
-        className="absolute top-0 flex flex-col items-center w-full p-10 font-ICEJaram text-[#8B97A3]"
+        className="absolute top-0 flex flex-col items-center w-full p-10 font-ICEJaram bg-gradient-to-b from-[#8B97A3] to-[#4B5F74] bg-clip-text text-transparent"
       >
         <p className="text-5xl">스펙트럼</p>
         <p className="self-end text-right">작곡 이지예</p>
-        <div className="flex flex-col gap-5 text-base text-center font-NanumJungHagSaeng">
-          <p className="mt-5">
+        <div className="flex flex-col gap-5 text-base text-center font-NanumJungHagSaeng ">
+          <p className="font-bold">
             “희진은 결코 루이가 보는 방식으로 그 풍경을 볼 수 없을 것이다.
-            <br /> 하지만 희진은 루이가 보는 세계를 약간이나마 상상할 수 있었고, 기쁨을 느꼈다.”
+            <br />
+            하지만 희진은 루이가 보는 세계를 약간이나마 상상할 수 있었고,
+            <br />
+            기쁨을 느꼈다.”
             <br />- 『우리가 빛의 속도로 갈 수 없다면』 중 《스펙트럼》 중
           </p>
-          <p className="mt-10">
+          <p className="mt-8">
             이 곡은 김초엽 작가의 소설 『우리가 빛의 속도로 갈 수 없다면』의
             <br />
             7가지 단편 소설 중 《스펙트럼》의 이야기를 표현한 곡이다.
@@ -73,8 +76,7 @@ export default function Spectrum() {
             루이는 희진에게 외계행성에서 생존할 수 있도록 <br />
             음식과 잠잘 곳을 제공한다. <br />
             이렇게 절대 공존할 수 없을 것 같던 두 생명체가 <br />꽤 오랜 시간을 함께하면서 살아간다.
-          </p>
-          <p>
+            <br />
             끝까지 그들은 서로의 언어를 이해할 수는 없었지만 <br />
             갑작스러운 헤어짐에 서로를 그리워하고 <br />
             함께 했던 소중한 기억을 간직하며 살아간다.
