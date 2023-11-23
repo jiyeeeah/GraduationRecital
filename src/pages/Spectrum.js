@@ -16,10 +16,10 @@ export default function Spectrum() {
   const handleScroll = () => setOffsetY(window.scrollY);
 
   const BGElemetStyle = {
-    transform: offsetY !== 0 && `translateY(${offsetY * 0.5}px)`,
+    transform: offsetY !== 0 && `translateY(${offsetY * 0}px)`,
   };
   const starsElemetStyle = {
-    transform: offsetY !== 0 && `translateY(${-offsetY * 0}px)`,
+    transform: offsetY !== 0 && `translateY(${-offsetY * 0.5}px)`,
   };
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Spectrum() {
   }, []);
 
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white overscroll-none">
       <img
         src={spectrumBGUrl}
         alt="spectrum배경"
