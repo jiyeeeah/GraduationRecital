@@ -37,7 +37,5 @@
 }
 @font-face {
   font-family: "NanumJungHagSaeng";
-  src: url("https://hangeul.pstatic.net/hangeul_static/css/NanumJungHagSaeng.css") format("css");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../assets/fonts/NanumJungHagSaeng.ttf");
 }

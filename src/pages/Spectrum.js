@@ -50,7 +50,7 @@ export default function Spectrum() {
       >
         <p className="text-5xl">스펙트럼</p>
         <p className="self-end text-right">작곡 이지예</p>
-        <div className="flex flex-col gap-5 text-lg text-center font-NanumJungHagSaeng">
+        <div className="flex flex-col gap-5 text-base text-center font-NanumJungHagSaeng">
           <p className="mt-5">
             “희진은 결코 루이가 보는 방식으로 그 풍경을 볼 수 없을 것이다.
             <br /> 하지만 희진은 루이가 보는 세계를 약간이나마 상상할 수 있었고, 기쁨을 느꼈다.”
