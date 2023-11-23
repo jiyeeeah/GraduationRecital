@@ -36,7 +36,7 @@ export default function Spectrum() {
         src={spectrumBGUrl}
         alt="spectrum배경"
         style={BGElemetStyle}
-        className="absolute top-0"
+        className="absolute -top-10"
       />
       <img
         src={starsUrl}
@@ -46,11 +46,15 @@ export default function Spectrum() {
       />
       <div
         style={BGElemetStyle}
-        className="absolute top-0 flex flex-col items-center w-full font-ICEJaram bg-gradient-to-b from-[#8B97A3] to-[#4B5F74] bg-clip-text text-transparent"
+        className="absolute top-0 flex flex-col items-center w-full gap-5 pt-10"
       >
-        <p className="text-5xl">스펙트럼</p>
-        <p className="self-end text-right">작곡 이지예</p>
-        <div className="flex flex-col gap-5 text-base text-center font-NanumJungHagSaeng ">
+        <div className="flex flex-col items-center w-full font-ICEJaram">
+          <p className="text-7xl bg-gradient-to-b from-[#ebeef2] to-[#dfe7f0] text-transparent bg-clip-text">
+            스펙트럼
+          </p>
+          <p className="self-end pr-10 text-2xl text-right text-[#dfe7f0]">작곡 이지예</p>
+        </div>
+        <div className="flex flex-col gap-5 text-xl text-center font-NanumJungHagSaeng bg-gradient-to-b from-[#8B97A3] to-[#4B5F74] bg-clip-text text-transparent">
           <p className="font-bold">
             “희진은 결코 루이가 보는 방식으로 그 풍경을 볼 수 없을 것이다.
             <br />
@@ -59,12 +63,10 @@ export default function Spectrum() {
             기쁨을 느꼈다.”
             <br />- 『우리가 빛의 속도로 갈 수 없다면』 중 《스펙트럼》 중
           </p>
-          <p className="mt-8">
+          <p className="mt-6">
             이 곡은 김초엽 작가의 소설 『우리가 빛의 속도로 갈 수 없다면』의
             <br />
-            7가지 단편 소설 중 《스펙트럼》의 이야기를 표현한 곡이다.
-          </p>
-          <p>
+            7가지 단편 소설 중 《스펙트럼》의 이야기를 표현한 곡이다. <br />
             《스펙트럼》은 지구인 ‘희진’이 외계 행성에 불시착하여 <br />
             ‘루이’라는 외계인을 만나고 그 둘이 함께 살아가는 이야기다. <br />
             언뜻 보면 뻔한 sf소설에 불과할 수 있지만 <br />이 이야기는 그 이상의 메시지를 담고 있다.
