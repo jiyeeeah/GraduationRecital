@@ -39,8 +39,12 @@ export default function Spectrum() {
         className="absolute top-0"
       />
       <img src={starsUrl} alt="별" style={starsElemetStyle} className="absolute top-0 opacity-80" />
-      <div style={BGElemetStyle} className="absolute top-0 flex flex-col items-center w-full">
-        <p className="m-10 text-6xl font-ICEJaram text-[#8B97A3]">스펙트럼</p>
+      <div
+        style={BGElemetStyle}
+        className="absolute top-0 flex flex-col items-center w-full p-10 font-ICEJaram text-[#8B97A3]"
+      >
+        <p className="text-5xl">스펙트럼</p>
+        <p className="self-end text-right">작곡 이지예</p>
         {/* <p className="text-xs text-center">
           “희진은 결코 루이가 보는 방식으로 그 풍경을 볼 수 없을 것이다.
           <br /> 하지만 희진은 루이가 보는 세계를 약간이나마 상상할 수 있었고, 기쁨을 느꼈다.”

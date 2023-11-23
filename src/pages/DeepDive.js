@@ -18,14 +18,17 @@ export default function DeepDive() {
     <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory overscroll-none">
       <div className="relative flex-shrink-0 h-real-screen snap-start bg-gradient-to-b from-blue-100 to-blue-900">
         <img src={SeaBGURl} alt="바다 이미지" className="absolute top-0 h-real-screen" />
-        <div className="absolute top-0 flex flex-col items-center w-full h-full">
-          <p className="m-10 text-7xl text-blue-950 font-JustBreathe">Deep Dive</p>
+        <div className="absolute top-0 flex flex-col items-center w-full h-full gap-5 p-10">
+          <div className="flex flex-col">
+            <p className="text-7xl text-blue-950 font-JustBreathe">Deep Dive</p>
+            <p className="self-end text-xl text-blue-950 font-JejuGamgyul">작곡 이지예</p>
+          </div>
           <p className="text-2xl text-center text-blue-950 font-JejuGamgyul">
             무언가에 깊이 몰입한 적,
             <br />
             어딘가에 깊게 빠져든 적이 있나요?
           </p>
-          <DownIcon className="w-8 h-8 m-5 fill-blue-950" />
+          <DownIcon className="w-8 h-8 fill-blue-950" />
         </div>
       </div>
       <div className="relative flex-shrink-0 bg-blue-950 snap-start h-real-screen">
@@ -42,7 +45,9 @@ export default function DeepDive() {
             <br />
             나는 영상 편집에 빠졌었다.
             <br />
-            그리고 2023년, 그저 재미로 시작한 웹개발 공부가
+            그리고 2023년,
+            <br />
+            그저 재미로 시작한 웹개발 공부가
             <br />
             생각보다 더욱 즐거웠고
             <br />
