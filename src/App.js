@@ -1,7 +1,7 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import DeepDive from "./pages/DeepDive";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Spectrum from "./pages/Spectrum";
 import Irony from "./pages/Irony";
 import Vanish from "./pages/Vanish";

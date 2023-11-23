@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import setScreenHeight from "../utils/setScreenHeight";
+import "../styles/spectrum.css";
 
 export default function Spectrum() {
   useEffect(() => {
@@ -12,9 +13,11 @@ export default function Spectrum() {
   }, []);
 
   return (
-    <div className="overflow-scroll text-white h-real-screen snap snap-y snap-mandatory">
-      <div className="relative flex-shrink-0 h-real-screen snap-start">스펙</div>
-      <div className="relative flex-shrink-0 snap-start h-real-screen">트럼</div>
+    <div className="para-wrapper">
+      <div className="para-group">
+        <div className="para-layer back-layer">스펙</div>
+        <div className="para-layer front-layer">트럼</div>
+      </div>
     </div>
   );
 }
