@@ -16,6 +16,7 @@ module.exports = {
         GodoMaumR: ["GodoMaumR"],
         JustBreathe: ["JustBreathe"],
         JejuGamgyul: ["JejuGamgyul"],
+        ICEJaram: ["ICEJaram"],
       },
       backgroundImage: {
         sea: "url('../assets/images/background/sea.jpeg')",

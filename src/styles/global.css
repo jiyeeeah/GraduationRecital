@@ -9,30 +9,24 @@
 @font-face {
   font-family: "UhBeeSeHyunBold";
   src: url("../assets/fonts/UhBee Se_hyun Bold.ttf");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "SCoreDream4";
   src: url("../assets/fonts/SCDream4.otf");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "GodoMaumR";
   src: url("../assets/fonts/godoMaum.ttf");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "JustBreathe";
   src: url("../assets/fonts/JustBreathe.otf");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "JejuGamgyul";
   src: url("../assets/fonts/JejuGamgyul.otf");
-  font-weight: normal;
-  font-style: normal;
+}
+@font-face {
+  font-family: "ICEJaram";
+  src: url("../assets/fonts/ICEJaram.ttf");
 }
