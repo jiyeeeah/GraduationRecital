@@ -7,16 +7,18 @@
 }
 
 @font-face {
-  font-family: "UhBeeSeHyunBold";
-  src: url("../assets/fonts/UhBee Se_hyun Bold.ttf");
-}
-@font-face {
   font-family: "SCoreDream4";
-  src: url("../assets/fonts/SCDream4.otf");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Medium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "GodoMaumR";
-  src: url("../assets/fonts/godoMaum.ttf");
+  font-family: "godoMaum";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/godoMaum.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "JustBreathe";
@@ -27,6 +29,15 @@
   src: url("../assets/fonts/JejuGamgyul.otf");
 }
 @font-face {
-  font-family: "ICEJaram";
-  src: url("../assets/fonts/ICEJaram.ttf");
+  font-family: "iceJaram-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumJungHagSaeng";
+  src: url("https://hangeul.pstatic.net/hangeul_static/css/NanumJungHagSaeng.css") format("css");
+  font-weight: normal;
+  font-style: normal;
 }

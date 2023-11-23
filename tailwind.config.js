@@ -11,12 +11,12 @@ module.exports = {
         "2xs": ["8px", "12px"],
       },
       fontFamily: {
-        UhBeeSeHyunBold: ["UhBeeSeHyunBold"],
         SCoreDream4: ["SCoreDream4"],
-        GodoMaumR: ["GodoMaumR"],
+        GodoMaumR: ["godoMaum"],
         JustBreathe: ["JustBreathe"],
         JejuGamgyul: ["JejuGamgyul"],
-        ICEJaram: ["ICEJaram"],
+        ICEJaram: ["iceJaram-Rg"],
+        NanumJungHagSaeng: ["NanumJungHagSaeng"],
       },
       backgroundImage: {
         sea: "url('../assets/images/background/sea.jpeg')",

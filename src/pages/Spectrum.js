@@ -19,7 +19,7 @@ export default function Spectrum() {
     transform: offsetY !== 0 && `translateY(${offsetY * 0}px)`,
   };
   const starsElemetStyle = {
-    transform: offsetY !== 0 && `translateY(${-offsetY * 0.5}px)`,
+    transform: offsetY !== 0 && `translateY(${-offsetY * 0.45}px)`,
   };
 
   useEffect(() => {
@@ -31,21 +31,21 @@ export default function Spectrum() {
   }, []);
 
   return (
-    <div className="relative bg-white overscroll-none">
+    <div className="relative">
       <img
         src={spectrumBGUrl}
         alt="spectrum배경"
         style={BGElemetStyle}
         className="absolute top-0"
       />
-      <img src={starsUrl} alt="별" style={starsElemetStyle} className="absolute top-0 opacity-80" />
+      <img src={starsUrl} alt="별" style={starsElemetStyle} className="absolute top-0 opacity-60" />
       <div
         style={BGElemetStyle}
         className="absolute top-0 flex flex-col items-center w-full p-10 font-ICEJaram text-[#8B97A3]"
       >
         <p className="text-5xl">스펙트럼</p>
         <p className="self-end text-right">작곡 이지예</p>
-        {/* <p className="text-xs text-center">
+        <p className="text-xs text-center font-NanumJungHagSaeng">
           “희진은 결코 루이가 보는 방식으로 그 풍경을 볼 수 없을 것이다.
           <br /> 하지만 희진은 루이가 보는 세계를 약간이나마 상상할 수 있었고, 기쁨을 느꼈다.”
           <br />- 『우리가 빛의 속도로 갈 수 없다면』 중 《스펙트럼》 중
@@ -66,7 +66,7 @@ export default function Spectrum() {
           되는데 뒷부분에서 그들의 급작스러운 헤어짐 이후의 감정을 짧게 표현했다. 특히 이 소설은
           희진의 시선을 담았는데 희진은 지구에서 계속 루이의 언어를 연구하고 그를 그리워하며 그때의
           소중한 추억을 잊지 못한다.
-        </p> */}
+        </p>
       </div>
     </div>
   );
