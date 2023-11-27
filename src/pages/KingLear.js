@@ -48,6 +48,7 @@ export default function KingLear() {
           하지만 나는 너를 책망하지 않겠다. 언제고 간에 너도 분명 치욕스런 일을 당할 터이니 마음을
           고쳐라. 착한 사람이 되도록 애써라. 나는 참겠다.
         </p>
+        <p>(계속↓)</p>
       </div>
       <div className="flex flex-col justify-center flex-shrink-0 gap-3 p-6 text-2xl text-black h-real-screen snap-start font-GrandpaSharing indent-3 bg-paper">
         <p>

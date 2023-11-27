@@ -32,8 +32,6 @@
   font-family: "iceJaram-Rg";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2")
     format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "NanumJungHagSaeng";
@@ -43,4 +41,25 @@
   font-family: "Grandpa_sharing";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Grandpa_sharing.woff")
     format("woff");
+}
+@font-face {
+  font-family: "SDMiSaeng";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dokrip";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Dokrip.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Daughter_handwriting";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_03@1.0/Daughter_handwriting.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
