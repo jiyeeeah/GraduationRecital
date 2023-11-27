@@ -49,10 +49,12 @@ export default function Spectrum() {
         className="absolute top-0 flex flex-col items-center w-full gap-5 pt-10"
       >
         <div className="flex flex-col items-center w-full font-ICEJaram">
-          <p className="text-7xl bg-gradient-to-b from-[#ebeef2] to-[#dfe7f0] text-transparent bg-clip-text">
+          <p className="text-7xl bg-gradient-to-b from-[#f1f5f9] to-[#dfe7f0] font-bold text-transparent bg-clip-text">
             스펙트럼
           </p>
-          <p className="self-end pr-10 text-2xl text-right text-[#dfe7f0]">작곡 이지예</p>
+          <p className="self-end pr-10 text-2xl text-right text-[#dfe7f0] font-semibold">
+            작곡 이지예
+          </p>
         </div>
         <div className="flex flex-col gap-5 text-xl text-center font-NanumJungHagSaeng bg-gradient-to-b from-[#8B97A3] to-[#4B5F74] bg-clip-text text-transparent">
           <p className="font-bold">
