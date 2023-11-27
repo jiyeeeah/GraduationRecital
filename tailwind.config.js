@@ -18,9 +18,9 @@ module.exports = {
         ICEJaram: ["iceJaram-Rg"],
         NanumJungHagSaeng: ["NanumJungHagSaeng"],
         GrandpaSharing: ["Grandpa_sharing"],
-        MiSaeng: ["SDMiSaeng"],
         Dokrip: ["Dokrip"],
         Daughter: ["Daughter_handwriting"],
+        BKK: ["BookkMyungjo-Bd"],
       },
       backgroundImage: {
         sea: "url('../assets/images/background/sea.jpeg')",

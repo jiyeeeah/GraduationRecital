@@ -43,13 +43,6 @@
     format("woff");
 }
 @font-face {
-  font-family: "SDMiSaeng";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "Dokrip";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Dokrip.woff")
     format("woff");
@@ -61,5 +54,12 @@
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_03@1.0/Daughter_handwriting.woff")
     format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BookkMyungjo-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
