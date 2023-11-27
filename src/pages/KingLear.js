@@ -51,7 +51,7 @@ export default function KingLear() {
           alt="리어왕 가사 배경"
           className="absolute top-0 w-full h-real-screen"
         />
-        <div className="absolute top-0 p-12 text-lg text-black font-GrandpaSharing">
+        <div className="absolute top-0 p-12 text-xl text-black font-GrandpaSharing">
           <p>
             사랑하는 딸에게 모든 것을 물려준 리어왕, 그러나 첫째 딸 고네릴과 둘째 딸 리건에 모든
             것을 빼앗기고 만다. 리어왕. 두 딸에게 소리친다. 그리고 하늘에 원망을 한다.
@@ -65,6 +65,15 @@ export default function KingLear() {
             하지만 나는 너를 책망하지 않겠다. 언제고 간에 너도 분명 치욕스런 일을 당할 터이니 마음을
             고쳐라. 착한 사람이 되도록 애써라. 나는 참겠다.
           </p>
+        </div>
+      </div>
+      <div className="relative flex-shrink-0 snap-start h-real-screen">
+        <img
+          src={KingLearBGURl}
+          alt="리어왕 가사 배경"
+          className="absolute top-0 w-full h-real-screen"
+        />
+        <div className="absolute top-0 p-12 text-xl text-black font-GrandpaSharing">
           <p>
             하늘이시여. 인내를 주소. 제겐 인내가 필요합니다. 제신들이여. 여기 서 있는 불쌍한 늙은일
             보십시오. 가슴에 슬픔이 더 없이 맺히고 나이가 찰 대로 차서 어느 모로 보나 불행한 나요.
