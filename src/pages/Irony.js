@@ -14,13 +14,13 @@ export default function Irony() {
   return (
     <div className="text-[#355692] absolute top-0 min-h-real-screen flex flex-col gap-8 pl-10 pr-3 pt-5 font-BKK ">
       <div className="flex flex-col w-full gap-3">
-        <p className="self-center text-7xl">모순</p>
-        <p className="self-end text-lg">작곡 문가현</p>
+        <p className="self-center text-4xl">모순</p>
+        <p className="self-end text-sm">작곡 문가현</p>
       </div>
-      <div>
+      <div className="text-sm">
         <p>“우리는 모순을 안고 있지만, 모순을 거부해야 한다.” -알베르 카뮈, 《여름》</p>
       </div>
-      <div className="flex flex-col gap-3 mb-28">
+      <div className="flex flex-col gap-3 text-sm mb-28">
         <p>
           이 곡은 프랑스 작가 ‘알베르 카뮈’의 {"<"}여름{">"}이라는 글에서 읽은 한 문장에 큰 영감을
           받아 작곡되었습니다. 책의 많은 부분이 좋은 글이었지만, 유독 저에게는 “우리는 모순을 안고
