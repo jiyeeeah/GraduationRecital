@@ -7,8 +7,11 @@ import Irony from "./pages/Irony";
 import Vanish from "./pages/Vanish";
 import ChangDuk from "./pages/ChangDuk";
 import KingLear from "./pages/KingLear";
+import RouteChangeTracker from "./utils/routeChangeTracker";
 
 export default function App() {
+  RouteChangeTracker();
+
   return (
     <BrowserRouter>
       <Routes>
