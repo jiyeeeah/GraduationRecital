@@ -17,6 +17,7 @@ module.exports = {
         JejuGamgyul: ["JejuGamgyul"],
         ICEJaram: ["iceJaram-Rg"],
         NanumJungHagSaeng: ["NanumJungHagSaeng"],
+        GrandpaSharing: ["Grandpa_sharing"],
       },
       backgroundImage: {
         sea: "url('../assets/images/background/sea.jpeg')",

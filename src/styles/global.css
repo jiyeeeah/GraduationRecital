@@ -39,3 +39,8 @@
   font-family: "NanumJungHagSaeng";
   src: url("../assets/fonts/NanumJungHagSaeng.ttf");
 }
+@font-face {
+  font-family: "Grandpa_sharing";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Grandpa_sharing.woff")
+    format("woff");
+}
