@@ -12,7 +12,7 @@ export default function Irony() {
   }, []);
 
   return (
-    <div className="text-[#355692] absolute top-0 min-h-real-screen flex flex-col gap-8 pl-10 pr-3 pt-5 font-BKK">
+    <div className="text-[#355692] absolute top-0 min-h-real-screen flex flex-col gap-8 pl-10 pr-3 pt-5 font-BKK ">
       <div className="flex flex-col w-full gap-3">
         <p className="self-center text-7xl">모순</p>
         <p className="self-end text-lg">작곡 문가현</p>

@@ -15,15 +15,15 @@ export default function DeepDive() {
   }, []);
 
   return (
-    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory overscroll-none">
+    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
       <div className="relative flex-shrink-0 h-real-screen snap-start bg-gradient-to-b from-blue-100 to-blue-900">
         <img src={SeaBGURl} alt="바다 이미지" className="absolute top-0 h-real-screen" />
-        <div className="absolute top-0 flex flex-col items-center w-full h-full gap-5 p-10">
+        <div className="absolute top-0 flex flex-col items-center w-full h-full p-5 pt-10 gap-7">
           <div className="flex flex-col">
             <p className="text-7xl text-blue-950 font-JustBreathe">Deep Dive</p>
-            <p className="self-end text-xl text-blue-950 font-JejuGamgyul">작곡 이지예</p>
+            <p className="self-end text-2xl text-blue-950 font-JejuGamgyul">작곡 이지예</p>
           </div>
-          <p className="text-2xl text-center text-blue-950 font-JejuGamgyul">
+          <p className="text-3xl text-center text-blue-950 font-JejuGamgyul">
             무언가에 깊이 몰입한 적,
             <br />
             어딘가에 깊게 빠져든 적이 있나요?
@@ -34,7 +34,7 @@ export default function DeepDive() {
       <div className="relative flex-shrink-0 bg-blue-950 snap-start h-real-screen">
         <img src={DeepSeaBGURl} alt="바다 이미지" className="absolute top-0 w-full h-real-screen" />
         <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full">
-          <p className="text-2xl text-center text-blue-50 font-JejuGamgyul">
+          <p className="text-3xl text-center text-blue-50 font-JejuGamgyul">
             나의 대학교 4년은 깊게 빠져들
             <br />
             무언가를 찾아가는 과정이었다.

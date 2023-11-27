@@ -12,7 +12,7 @@ export default function Vanish() {
   }, []);
 
   return (
-    <div className="absolute top-0 flex flex-col items-center gap-8 p-6 text-white bg-black bg-opacity-20 min-h-real-screen">
+    <div className="absolute top-0 flex flex-col items-center w-full gap-8 p-6 overflow-scroll text-white bg-black bg-opacity-20 min-h-real-screen">
       <div className="flex flex-col w-full gap-3 font-Dokrip">
         <p className="self-center text-6xl">소멸</p>
         <p className="self-end text-lg">작곡 문가현</p>
