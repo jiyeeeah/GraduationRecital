@@ -18,7 +18,10 @@ export default function Irony() {
         <p className="self-end text-sm">작곡 문가현</p>
       </div>
       <div className="text-sm">
-        <p>“우리는 모순을 안고 있지만, 모순을 거부해야 한다.” -알베르 카뮈, 《여름》</p>
+        <p>
+          “우리는 모순을 안고 있지만, 모순을 거부해야 한다.” <br />
+          -알베르 카뮈, 《여름》
+        </p>
       </div>
       <div className="flex flex-col gap-3 text-sm mb-28">
         <p>
