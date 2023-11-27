@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: {
         sea: "url('../assets/images/background/sea.jpeg')",
+        paper: "url('../assets/images/background/KingLearBGTemp.jpeg')",
       },
     },
     minHeight: {
