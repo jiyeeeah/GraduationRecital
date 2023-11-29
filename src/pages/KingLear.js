@@ -1,9 +1,22 @@
+import { useEffect } from "react";
+import setScreenHeight from "../utils/setScreenHeight";
+
 export default function KingLear() {
+  useEffect(() => {
+    setScreenHeight();
+
+    // resize 이벤트가 발생하면 다시 계산하도록 아래 코드 추가
+    window.addEventListener("resize", setScreenHeight);
+    return () => window.removeEventListener("resize", setScreenHeight);
+  }, []);
   return (
-    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory overscroll-none">
-      <div className="flex flex-col flex-shrink-0 bg-white h-real-screen snap-start">
-        <p className="text-center">리어왕의 절규</p>
-        <div>
+    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory">
+      <div className="flex flex-col flex-shrink-0 gap-8 p-5 pt-10 h-real-screen snap-start bg-KingLear font-Jeongnim">
+        <div className="flex flex-col gap-3 justify-self-start">
+          <p className="self-center text-3xl text-center">리어왕의 절규</p>
+          <p className="self-end text-base">작곡 문가현</p>
+        </div>
+        <div className="flex flex-col gap-3 text-lg indent-3 justify-self-center">
           <p>
             “리어왕의 절규”는 윌리엄 셰익스피어의 4대 비극 중 하나인 리어왕의 한 부분을 판소리 음
             악으로 재탄생시킨 곡입니다. 제목에서 드러나듯이 리어왕이 사랑하는 딸들에게 버림받고 외
@@ -13,25 +26,32 @@ export default function KingLear() {
             추어보았습니다.
           </p>
           <p>
-            세상에는 다양한 인간의 군상이 존재하는 것처럼 감정에도 수많은 군상이 존재합니다. 반대 로
-            그러한 많은 감정들이 모여 다양한 사람들의 모습이 탄생하는 것이기도 하죠. 우리는 한
-            가지의 사건에 한 가지의 감정만을 느낄 수 없어요. 단 하나의 사건이라도 인간은 그것에서
-            여러 감정이 복합된 형태로 상황을 바라봅니다. 다만, 그 사이에서 모두 동일한 강도의 감정
-            을 느낄 수는 없기에, 어떠한 감정이 우선적으로 강하게 느껴지면 우리는 “그 감정”만을 느끼
-            고 있다고 통합적으로 축약하여 인식할 뿐이죠. 이러한 관점에서, 리어왕을 읽으며 늘 고민해
-            왔던 일종의 사건에 대한 감정의 혼합이라는 것에 대한 파동이 거세게 일었던 것 같아요.
+            세상에는 다양한 인간의 군상이 존재하는 것처럼 감정에도 수많은 군상이 존재합니다. 반대로
+            그러한 많은 감정들이 모여 다양한 사람들의 모습이 탄생하는 것이기도 하죠. 우리는 한가지의
+            사건에 한 가지의 감정만을 느낄 수 없어요. 단 하나의 사건이라도 인간은 그것에서 여러
+            감정이 복합된 형태로 상황을 바라봅니다.
           </p>
-          <p>
-            ‘어리석은 아버지인 리어왕이 결국 딸들에게 배신당했다’라는 사건의 큰 틀 안에서 그의 감
-            정은 매우 다양하고 꽤 분명하게 나타났거든요. 딸에 대한 분노, 서러움, 증오, 실망, 원망,
-            자 기 연민부터, 그럼에도 불구하고 곳곳에 드러나는 애증이라 일컬어지는 애정과 증오 사이의
-            말들까지. 저는 이러한 리어왕의 감정에 초점을 맞추어 가사를 직접 정리하는 과정을 밟으며
-            그의 온 감정들이 집약되어 나타나는 현상을 더욱 체감할 수 있었고 전반적인 곡 작업의 과정
-            을 통해 리어왕의 심정에 더욱 이입될 수 있었어요. 진양-엇모리, 중중모리-자진모리 순의 장
-            단으로 진행되는 이 곡을 여러분들도 가사와 함께 들으며, 리어왕의 그러한 복합적인 심정을
-            다각적으로 경험해볼 수 있는 시간이 되셨으면 합니다!
-          </p>
+          <p>(계속↓)</p>
         </div>
+      </div>
+      <div className="flex flex-col justify-center flex-shrink-0 gap-8 p-5 text-lg h-real-screen snap-start bg-KingLear font-Jeongnim indent-3">
+        <p>
+          다만, 그 사이에서 모두 동일한 강도의 감정 을 느낄 수는 없기에, 어떠한 감정이 우선적으로
+          강하게 느껴지면 우리는 “그 감정”만을 느끼 고 있다고 통합적으로 축약하여 인식할 뿐이죠.
+          이러한 관점에서, 리어왕을 읽으며 늘 고민해 왔던 일종의 사건에 대한 감정의 혼합이라는 것에
+          대한 파동이 거세게 일었던 것 같아요.
+        </p>
+        <p>
+          ‘어리석은 아버지인 리어왕이 결국 딸들에게 배신당했다’라는 사건의 큰 틀 안에서 그의 감 정은
+          매우 다양하고 꽤 분명하게 나타났거든요. 딸에 대한 분노, 서러움, 증오, 실망, 원망, 자 기
+          연민부터, 그럼에도 불구하고 곳곳에 드러나는 애증이라 일컬어지는 애정과 증오 사이의
+          말들까지. 저는 이러한 리어왕의 감정에 초점을 맞추어 가사를 직접 정리하는 과정을 밟으며
+          그의 온 감정들이 집약되어 나타나는 현상을 더욱 체감할 수 있었고 전반적인 곡 작업의 과정 을
+          통해 리어왕의 심정에 더욱 이입될 수 있었어요. 진양-엇모리, 중중모리-자진모리 순의 장
+          단으로 진행되는 이 곡을 여러분들도 가사와 함께 들으며, 리어왕의 그러한 복합적인 심정을
+          다각적으로 경험해볼 수 있는 시간이 되셨으면 합니다!
+        </p>
+        <p className="text-center">↓ 가사보기 ↓</p>
       </div>
       <div className="flex flex-col justify-center flex-shrink-0 gap-3 p-6 text-2xl text-black h-real-screen snap-start font-GrandpaSharing indent-3 bg-paper">
         <p className="mb-10 text-4xl font-bold text-center">리어왕의 편지</p>

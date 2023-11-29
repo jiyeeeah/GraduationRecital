@@ -22,10 +22,11 @@ module.exports = {
         Daughter: ["Daughter_handwriting"],
         BKK: ["BookkMyungjo-Bd"],
         GangWonModu: ["GangwonEdu_OTFBoldA"],
+        Jeongnim: ["Jeongnimsaji-R"],
       },
       backgroundImage: {
-        sea: "url('../assets/images/background/sea.jpeg')",
-        paper: "url('../assets/images/background/KingLearBGTemp.jpeg')",
+        paper: "url('../assets/images/background/KingLearPaperBG.jpeg')",
+        KingLear: "url('../assets/images/background/KingLearBG.png')",
       },
     },
     minHeight: {
