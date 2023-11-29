@@ -34,7 +34,7 @@ export default function KingLear() {
         </div>
       </div>
       <div className="flex flex-col justify-center flex-shrink-0 gap-3 p-6 text-2xl text-black h-real-screen snap-start font-GrandpaSharing indent-3 bg-paper">
-        <p className="text-4xl font-bold text-center">리어왕의 편지</p>
+        <p className="mb-10 text-4xl font-bold text-center">리어왕의 편지</p>
         <p>
           사랑하는 딸에게 모든 것을 물려준 리어왕, 그러나 첫째 딸 고네릴과 둘째 딸 리건에 모든 것을
           빼앗기고 만다. 리어왕. 두 딸에게 소리친다. 그리고 하늘에 원망을 한다.
@@ -48,7 +48,7 @@ export default function KingLear() {
           하지만 나는 너를 책망하지 않겠다. 언제고 간에 너도 분명 치욕스런 일을 당할 터이니 마음을
           고쳐라. 착한 사람이 되도록 애써라. 나는 참겠다.
         </p>
-        <p>(계속↓)</p>
+        <p className="text-neutral-700">(계속↓)</p>
       </div>
       <div className="flex flex-col justify-center flex-shrink-0 gap-3 p-6 text-2xl text-black h-real-screen snap-start font-GrandpaSharing indent-3 bg-paper">
         <p>
