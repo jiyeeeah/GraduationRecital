@@ -17,7 +17,7 @@ export default function ChangDuk() {
         <p className="self-center text-5xl">창덕궁의 지금</p>
         <p className="self-end text-base">작곡 이지예</p>
       </div>
-      <div className="flex flex-col gap-3 text-lg text-center">
+      <div className="flex flex-col gap-3 text-lg text-center indent-3">
         <p>
           학교의 과제 중 일환으로 창덕궁에 다녀오게 되었습니다. 기대 없이 가서 그랬는지 정말
           인상깊은 경험이었습니다.
