@@ -21,6 +21,8 @@ module.exports = {
         Dokrip: ["Dokrip"],
         Daughter: ["Daughter_handwriting"],
         BKK: ["BookkMyungjo-Bd"],
+        NPS: ["NPSfontBold"],
+        GangWonModu: ["GangwonEdu_OTFBoldA"],
       },
       backgroundImage: {
         sea: "url('../assets/images/background/sea.jpeg')",
