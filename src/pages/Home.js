@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import setScreenHeight from "../utils/setScreenHeight";
 import MenuButton from "../components/MenuButton";
 import { ReactComponent as DownIcon } from "../assets/svgs/chevron-down.svg";
@@ -18,6 +18,15 @@ import HeartL from "../assets/images/heartL.png";
 import HeartR from "../assets/images/heartR.png";
 
 export default function Home() {
+  const topScrollRef = useRef();
+
+  useEffect(() => {
+    // Scroll to top on initial load or refresh
+    if (topScrollRef.current) {
+      topScrollRef.current.scrollTop = 0;
+    }
+  }, []);
+
   useEffect(() => {
     setScreenHeight();
 
@@ -27,7 +36,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-scroll h-real-screen snap snap-y snap-mandatory overscroll-none">
+    <div
+      className="overflow-scroll h-real-screen snap snap-y snap-mandatory overscroll-none"
+      ref={topScrollRef}
+    >
       <div className="relative flex flex-col items-center justify-center flex-shrink-0 w-full h-real-screen snap-start">
         <img src={mainImageUrl} alt="메인사진" />
         <DownIcon className="absolute bottom-0 w-8 h-8 m-5 fill-white" />
